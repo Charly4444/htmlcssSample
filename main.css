@@ -1,0 +1,403 @@
+/**{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+
+.container{
+    background-color: #074f57;
+    background-image: url("images/img1bg.jpg");  /*you must always come out to root folder the go in*/
+    background-size: cover;
+    width: 100%;
+    height:95%;
+    background-blend-mode: lighten;
+}
+
+.banner_search .title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+.title a{
+    text-decoration: none;
+    color: #343434;
+}
+
+.banner_search .box_btn{
+    float: right;
+    padding-top: 12px;
+    padding-right: 12px;
+}
+.banner_search{
+    margin-bottom: 12px;
+}
+
+.items .list-itm{
+    font-size: 20px;
+    padding: 4px 12px;
+    border: black 2px solid;
+    margin: 5px 5px;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.items .list-itm a{
+    color: #fff;
+    text-decoration: none;
+}
+.items .list-itm a:hover{
+    color: #65f3a2;
+    transition: 0.3s ease-out;
+}
+
+.display_news {
+    display: flex;
+  /*flex-wrap: wrap;*/
+  /*flex-direction: row;*/      /*default*/
+    justify-content: center;
+}
+
+.imagetxt_container{
+    width: 70vw;
+    height: 50vh;
+    /*border: red 2px solid;*/
+    margin: 40px 0;
+    display: flex;
+}
+
+.image_text{
+    /*border: blue 2px solid;*/
+    width: 50%;
+    height: 90%;
+    margin: 12px 8px;
+    margin-left: 0;
+    border: #ad8647 2px dashed;
+}
+
+.imgitm{
+    height: 60%;
+    /*border: green 2px solid;*/
+    /*border-radius: 8px;*/
+}
+
+.imgitm img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.txtitm{
+    /*border: purple 2px solid;*/
+    height: 30%;
+    margin: 12px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.newsfeed{
+    padding-left: 80px;
+    width: 20vw;
+}
+
+.checkit .checkpjs{
+    float: right;
+    padding-right: 20px;
+    color: #74Af33;
+    text-decoration: none;      /*to remove the underline*/
+}
+.checkpjs:hover{
+    color: #FFE32A;
+}
+.phonelink .contact{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.socialmedia{
+    margin-left: 10px;
+}
+.items{
+    margin-left: 12px;
+    justify-content: center;
+}
+.smedia a{
+    font-size: 15px;
+    padding: 2px 4px;
+    color: #ccc;
+    text-decoration: none;
+}
+.smedia a:hover{
+    transition:0.3s ease-out;
+    color: #519c4f;
+}
+
+.foot{
+/*border: orange 2px solid;*/
+    background-color: #2e7e5f;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;     /*text align use for text*/
+}
+.foot h3{
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+
+/*ABOUT US*/
+.image-parttxt{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    margin: 12px 0;
+}
+.image-parttxt img{
+    width: 60%;
+    height: 100%;
+    border-radius: 5px;
+    /*object-fit: cover;*/
+}
+.image-parttxt .sidetxt{
+    width: 35%;
+    text-align: justify;
+    padding-left: 45px;
+}
+.txtpart{
+    width:98%;
+    margin: 8px 0;
+    text-align: justify;
+}
+.txtpart .headin{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+.kinda-footer{
+    margin: 40px 0;
+    display: flex;
+}
+.kinda-footer h4{
+    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.kinda-footer article{
+    text-align: justify;
+}
+.kinda-footer div{
+    padding-right: 8px;
+}
+.nmprop-foot{
+    width: 25%;
+    padding: 8px 12px;
+}
+
+
+/*PRODUCTS*/
+.products-disp{
+    display: block;
+    padding: 40px 0;
+}
+.products-disp-row{
+    display: flex;
+}
+.product-itm{
+    width: 25%;
+    height: 50%;
+    padding: 8px 12px;
+}
+.product-itm img{
+    width: 100%;
+    height: 25vh;       /*i set the image height with vh but the div height with %*/
+}
+.product-itm p{
+    width: 100%;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/*repeat media queries for screen size and prefered targets*/
+/*SCREEN MEDIA QUERIES*/
+@media screen and (max-width: 720px){
+/*we will target the properties we want changed at this screen width
+and repeat for other screen width*/
+    .items{
+        margin-top: 0px;
+        margin-left: 2px;
+        justify-content: center;
+        width: 81.35px;
+        height: 25px;
+        overflow: hidden;
+    }
+    .items .list-itm{
+        font-size: 20px;
+        padding: 0px 10px;
+        border: grey 2px solid;
+    }
+    .imagetxt_container{
+        display: block;
+        width: 70vw;
+    }
+    .image_text{
+    /*border: blue 2px solid;*/
+        width: 100%;
+        height: 90%;
+        margin: 20px 8px;
+        margin-left: 0;
+        border: #ad8647 2px dashed;
+        overflow: hidden;
+    }
+    .newsfeed{
+        padding-left: 9px;
+        width: 20vw;
+        margin: 270px 0;
+    }
+    .display_news {
+        display: block;
+        justify-items: center;
+        padding-left: 30px;
+    }
+    .newsfeed{
+        width: 70vw;
+    }
+    .smedia{
+        width: 70vw;
+        padding: 2px 4px;
+        color: #ccc;
+        text-decoration: none;
+    }
+    .checkit{
+        float: left;
+        width: 80vw;
+    }
+    .checkpjs{
+        float: left;
+    }
+    .image-parttxt{
+        display: block;
+        margin: 12px 0;
+    }
+    .image-parttxt img{
+        width: 100%;
+    }
+    .image-parttxt .sidetxt{
+        width: 100%;
+        padding-left: 0;
+
+    }
+    .txtpart{
+        margin: 12px 0;
+        padding-top: 205px;
+        padding-bottom: 25px;
+    }
+    .sidetxt{
+        margin: 12px 0;
+    }
+    .kinda-footer{
+        margin-top: 290px;
+        display: block;
+
+    }
+    .nmprop-foot{
+        /*border: red 2px solid;*/
+        margin: 10px 0;
+        width: 90%;
+    }
+    .kinda-footer h4{
+        margin: 10px 0;
+    }
+
+    /*i'm making it two columns at 720p*/
+    .products-disp{
+        display: flex;
+    }
+    .products-disp-row{
+        display: inline-block;
+    }
+    .product-itm{
+        display: inline-block;
+        width: 70%;   /*width property goes with in-line block to vary column no*/
+    }
+}
+
+
+@media screen and (max-width: 320px){
+
+    .items{
+        margin-top: 0px;
+        margin-left: 2px;
+        justify-content: center;
+        width: 81.35px;
+        height: 25px;
+        overflow: hidden;
+    }
+    .items .list-itm{
+        font-size: 20px;
+        padding: 0px 10px;
+        border: grey 2px solid;
+    }
+    .imagetxt_container{
+        display: block;
+        width: 70vw;
+    }
+    .image_text{
+    /*border: blue 2px solid;*/
+        width: 100%;
+        height: 90%;
+        margin: 20px 8px;
+        margin-left: 0;
+        border: #ad8647 2px dashed;
+    }
+    .newsfeed{
+        padding-left: 9px;
+        width: 20vw;
+        margin: 270px 0;
+    }
+    .display_news {
+        display: block;
+        justify-content: center;
+    }
+    .banner_search .title{
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 6px;
+    }
+    .newsfeed{
+        width: 70vw;
+    }
+    .smedia{
+        width: 70vw;
+        padding: 2px 4px;
+        color: #ccc;
+        text-decoration: none;
+    }
+    .checkit{
+        float: left;
+        width: 80vw;
+    }
+    .checkpjs{
+        float: left;
+    }
+    /*.socialmedia{
+        display: block;
+    }*/
+
+
+    /*i'm making it single column here*/
+    .products-disp{
+        display: block;
+    }
+    .products-disp-row{
+    }
+    .product-itm{
+        width: 90%;
+    }
+}
